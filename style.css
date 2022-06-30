@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #333 url(img/court.jpg) center bottom / cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(255,230,97, .95) 0%, rgba(0,0,0, .95) 100%); 
+}
+
+header {
+    width: 100%;
+    padding: 19px 50px;
+    background: #fff;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 9px;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 22px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo span {
+    color: #FF7A00;   
+}
+
+main {
+    position: relative;
+    padding: 50px 25px;
+    min-height: 100vh;
+}
+
+main h1 {
+    color: rgb(246, 24, 24);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 143px;
+    padding-left: 89px;
+    padding-right: 89px; 
+}    
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 316px;
+    height: 46px;
+    border-radius: 15px;
+    font-weight: 700;
+    background: #FFE458;
+    color:black
+}
+
+img {
+    margin-top: 100px;
+    display: block;
+    max-width: 100%;
+}
+
